@@ -19,7 +19,7 @@ if(id == null || pw == null || id.length() < 4 || pw.length() < 4){
 
 Class.forName("org.mariadb.jdbc.Driver");
 String url = "jdbc:mariadb://localhost:3306/blog";
-Connection conn = DriverManager.getConnection(url, "root", "1234");
+Connection conn = DriverManager.getConnection(url, "root", "aa900413");
 
 String sql = "select id, level from member where id = ? and pw = password(?)";
 PreparedStatement stmt = conn.prepareStatement(sql);

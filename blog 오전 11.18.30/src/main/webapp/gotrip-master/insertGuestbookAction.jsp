@@ -11,7 +11,7 @@ request.setCharacterEncoding("utf-8");
 String guestbookContent = request.getParameter("guestbookContent");
 
 Class.forName("org.mariadb.jdbc.Driver");
-Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "1234");
+Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "aa900413");
 
 // insert
 String sql = "insert into guestbook(guestbook_content, id, create_date) values(?, ?, now())";

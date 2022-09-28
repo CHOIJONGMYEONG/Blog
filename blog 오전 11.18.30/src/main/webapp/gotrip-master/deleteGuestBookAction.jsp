@@ -19,7 +19,7 @@ int guestbookNo = Integer.parseInt(request.getParameter("guestbookNo"));
 System.out.println("guestbookNo: " + guestbookNo);
 
 Class.forName("org.mariadb.jdbc.Driver");
-Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "1234");
+Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "aa900413");
 System.out.println("conn: " + conn);
 
 String sql = "delete from guestbook where guestbook_no = ? and id = ?";

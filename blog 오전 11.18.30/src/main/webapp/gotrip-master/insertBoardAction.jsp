@@ -27,7 +27,7 @@ System.out.println("boardPw: " + boardPw);
 
 // DB 연동
 Class.forName("org.mariadb.jdbc.Driver");
-Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "1234");
+Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "aa900413");
 		
 // 메뉴 목록
 String sql = "insert into board(location_no, board_title, board_content, board_pw, create_date) values (?, ?, ?, password(?), now())";

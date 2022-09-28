@@ -20,7 +20,7 @@ System.out.println("commentContent: " + commentContent);
 
 //DB 연동
 Class.forName("org.mariadb.jdbc.Driver");
-Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "1234");
+Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "aa900413");
 
 // update
 String updateSql = "update comment set comment_content = ? where comment_no = ? and id = ?";

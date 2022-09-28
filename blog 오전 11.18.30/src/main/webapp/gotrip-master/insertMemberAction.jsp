@@ -22,7 +22,7 @@ if(id == null || pw == null || id.length() < 4 || pw.length() < 4){
 
 //DB 연동
 Class.forName("org.mariadb.jdbc.Driver");
-Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "1234");
+Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "aa900413");
 		
 //메뉴 목록
 String memberSql = "insert into member(id, pw, level) values (?, password(?), 0)";

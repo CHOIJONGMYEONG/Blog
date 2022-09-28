@@ -29,7 +29,7 @@ int beginRow = (currentPage - 1) * ROW_PER_PAGE;
 
 // DB 연동
 Class.forName("org.mariadb.jdbc.Driver");
-Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "1234");
+Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "aa900413");
 		
 // 메뉴 목록
 String locationSql = "select location_no locationNo, location_name locationName from location";
