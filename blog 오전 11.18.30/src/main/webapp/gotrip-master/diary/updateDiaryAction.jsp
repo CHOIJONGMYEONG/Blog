@@ -22,7 +22,7 @@ String diaryTodo = request.getParameter("diaryTodo");
 String diaryDate = request.getParameter("diaryDate");
 
 Class.forName("org.mariadb.jdbc.Driver");
-Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "1234");
+Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "aa900413");
 System.out.println("conn: " + conn);
 
 String updateSql = "update diary set diary_todo = ?, diary_date = ? where diary_no = ?";

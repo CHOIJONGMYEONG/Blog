@@ -23,7 +23,7 @@ System.out.println("todo: " + todo);
 
 //DB 연동
 Class.forName("org.mariadb.jdbc.Driver");
-Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "1234");
+Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "aa900413");
 		
 //메뉴 목록
 String sql = "insert into diary(diary_date, diary_todo, create_date) values (?, ?, now())";

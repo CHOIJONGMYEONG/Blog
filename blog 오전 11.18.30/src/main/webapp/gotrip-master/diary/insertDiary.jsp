@@ -22,7 +22,7 @@ String date = request.getParameter("date");
 
 //메뉴 목록
 Class.forName("org.mariadb.jdbc.Driver");
-Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "1234");
+Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "aa900413");
 String locationSql = "select location_no locationNo, location_name locationName from location";
 PreparedStatement locationStmt = conn.prepareStatement(locationSql);
 ResultSet locationRset = locationStmt.executeQuery();

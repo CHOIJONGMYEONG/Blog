@@ -18,7 +18,7 @@ int diaryNo = Integer.parseInt(request.getParameter("diaryNo"));
 
 //DB 연동
 Class.forName("org.mariadb.jdbc.Driver");
-Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "1234");
+Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "aa900413");
 
 String sql = "select diary_date diaryDate, diary_todo diaryTodo from diary where diary_no = ?";
 PreparedStatement stmt = conn.prepareStatement(sql);

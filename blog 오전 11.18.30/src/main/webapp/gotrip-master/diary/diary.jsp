@@ -47,7 +47,7 @@ System.out.println(year + "년 " + (month + 1) + "월의 endBlank: " + endBlank)
 
 // ------------------------------------
 Class.forName("org.mariadb.jdbc.Driver");
-Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "1234");
+Connection conn = DriverManager.getConnection("jdbc:mariadb://localhost:3306/blog", "root", "aa900413");
 String sql = "select diary_no diaryNo, diary_date diaryDate, diary_todo diaryTodo from diary "
 				+ "where YEAR(diary_date) = ? and MONTH(diary_date) = ? order by diary_date";
 PreparedStatement stmt = conn.prepareStatement(sql);
